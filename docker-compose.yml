@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: tictactoe-postgres
+    environment:
+      POSTGRES_USER: tictactoe
+      POSTGRES_PASSWORD: tictactoe
+      POSTGRES_DB: tictactoe
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:

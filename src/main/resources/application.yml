@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tictactoe
+    driver-class-name: org.postgresql.Driver
+    username: tictactoe
+    password: tictactoe
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    org.example.tictactoe: info
